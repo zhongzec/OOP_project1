@@ -1,0 +1,5 @@
+//George Koutsogiannakis
+public interface RentInterface 
+{
+	public double getRentExpenses();
+}

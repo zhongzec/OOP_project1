@@ -1,0 +1,8 @@
+//George Koutsogiannakis
+public class ExpenseImpl extends OperatingExpenses implements ExpenseInterface 
+{
+	public double getOperatingExpenses()
+	{
+		return totalOperatingExpenses();
+	}
+}

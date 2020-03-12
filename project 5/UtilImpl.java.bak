@@ -1,0 +1,9 @@
+
+//George Kooutsogiannakis
+public class UtilImpl extends UtilityCosts implements UtilityCostsInterface 
+{
+	public double getUtilityExpenses()
+	{
+		return getUtilities();
+	}
+}

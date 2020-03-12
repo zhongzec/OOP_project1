@@ -1,0 +1,61 @@
+//George Koutsogiannakis
+package Client.Services.Enums.Help;
+public class  Utility
+{
+	double electricity=0.0;
+	double gas=0.0;
+	double water=0.0;
+    static double utilities=0.0;
+	public CorpUtilities()
+	{
+
+	}
+	public Utility(double e, double g, double w)
+	{
+		electricity=e;
+		gas=g;
+		water=w;
+	}
+
+	public double getElectricity()
+	{
+		return electricity;
+	}
+	public void setElectricity(double el)
+	{
+		electricity=el;
+	}
+	public double getGas()
+	{
+		return gas;
+	}
+	public void setGas(double ga)
+	{
+		gas=ga;
+	}
+	public double getWater()
+	{
+		return water;
+	}
+	public void setWater(double wa)
+	{
+		water=wa;
+	}
+	public String toString()
+	{
+		String out="The electricity is:"+" "+electricity+" "+"The gas is:"+" "+gas+" "+"The water is:"+" "+water;
+		return out;
+	}
+     public double getUtilities()
+	{
+		 return utilities;
+	}
+	public double totalUtil()
+	{
+		double total=electricity+gas+water;
+		utilities=utilities+total;
+		System.out.println("util cost="+total);
+		System.out.println("total utilities="+utilities);
+		return total;
+	}
+}

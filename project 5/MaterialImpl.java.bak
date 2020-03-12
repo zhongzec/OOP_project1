@@ -1,0 +1,10 @@
+//George Koutsogiannakis
+package Client.Services.Enums.Help;
+public class  MaterialImpl extends CorpMaterial implements MaterialCostsInterface
+{
+	public double getMaterialExpenses()
+	{
+		return getMaterial();
+	}
+
+}
